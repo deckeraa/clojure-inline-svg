@@ -183,17 +183,28 @@
 ;;   [:path] {}:d "M4 0c-2.2 0-4 1.8-4 4h1c0-1.66 1.34-3 3-3s3 1.34 3 3h1c0-2.2-1.8-4-4-4zm-.59 2.09c-.81.25-1.41 1.01-1.41 1.91 0 1.11.9 2 2 2 1.11 0 2-.89 2-2 0-.9-.59-1.65-1.41-1.91l-.59.88-.59-.88z" transform="translate(0 1)" />
 ;; </svg><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
 ;;   [:path] {}:d "M0 0v8h7v-4h-4v-4h-3zm4 0v3h3l-3-3zm-3 2h1v1h-1v-1zm0 2h1v1h-1v-1zm0 2h4v1h-4v-1z" />
-;; </svg><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
-;;   [:path] {}:d "M2 0v1h-.75c-.68 0-1.25.57-1.25 1.25v.5c0 .68.44 1.24 1.09 1.41l2.56.66c.14.04.34.29.34.44v.5c0 .14-.11.25-.25.25h-2.5c-.12 0-.21-.04-.25-.06v-.94h-1v1c0 .34.2.63.44.78.23.16.52.22.81.22h.75v1h1v-1h.75c.69 0 1.25-.56 1.25-1.25v-.5c0-.68-.44-1.24-1.09-1.41l-2.56-.66c-.14-.04-.34-.29-.34-.44v-.5c0-.14.11-.25.25-.25h2.5c.11 0 .21.04.25.06v.94h1v-1c0-.34-.2-.63-.44-.78-.23-.16-.52-.22-.81-.22h-.75v-1h-1z"
-;;   transform="translate(1)" />
-;; </svg><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
-;;   [:path] {}:d "M0 0v6l3-3v-3h-3zm5 0v6l3-3v-3h-3z" transform="translate(0 1)" />
-;; </svg><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
-;;   [:path] {}:d "M3 0l-3 3v3h3v-6zm5 0l-3 3v3h3v-6z" transform="translate(0 1)" />
 
-;; [:"http:{://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
- 
-;; [:path] {:d "M3 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1zm5 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1z" :transform "translate(0 1)"}
+(defn dollar [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+    [:path {:d "M2 0v1h-.75c-.68 0-1.25.57-1.25 1.25v.5c0 .68.44 1.24 1.09 1.41l2.56.66c.14.04.34.29.34.44v.5c0 .14-.11.25-.25.25h-2.5c-.12 0-.21-.04-.25-.06v-.94h-1v1c0 .34.2.63.44.78.23.16.52.22.81.22h.75v1h1v-1h.75c.69 0 1.25-.56 1.25-1.25v-.5c0-.68-.44-1.24-1.09-1.41l-2.56-.66c-.14-.04-.34-.29-.34-.44v-.5c0-.14.11-.25.25-.25h2.5c.11 0 .21.04.25.06v.94h1v-1c0-.34-.2-.63-.44-.78-.23-.16-.52-.22-.81-.22h-.75v-1h-1z"
+            :transform "translate(1)"}]]])
+
+(defn double-quote-sans-left [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+    [:path {:d "M0 0v6l3-3v-3h-3zm5 0v6l3-3v-3h-3z" :transform "translate(0 1)"}]]])
+
+
+(defn double-quote-sans-right [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+    [:path {:d "M3 0l-3 3v3h3v-6zm5 0l-3 3v3h3v-6z" :transform "translate(0 1)"}]]])
+
+(defn double-quote-serif-left [style color size]
+  [:div style
+   [:svg {:xmlns "http:://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+    [:path {:d "M3 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1zm5 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1z" :transform "translate(0 1)"}]]])
 
 (defn double-quote-serif-right [style color size]
   [:div style
