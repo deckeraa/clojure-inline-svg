@@ -245,60 +245,122 @@
 ;;  ;;   [:path] {}:d "M0 0v4l1.5-1.5 1.5 1.5 1-1-1.5-1.5 1.5-1.5h-4zm5 4l-1 1 1.5 1.5-1.5 1.5h4v-4l-1.5 1.5-1.5-1.5z" />
 ;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
 ;;  ;;   [:path] {}:d "M1 0l-1 1 1.5 1.5-1.5 1.5h4v-4l-1.5 1.5-1.5-1.5zm3 4v4l1.5-1.5 1.5 1.5 1-1-1.5-1.5 1.5-1.5h-4z" />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M4 0c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 1c.33 0 .64.09.94.19-.21.2-.45.38-.41.56.04.18.69.13.69.5 0 .27-.42.35-.13.66.35.35-.64.98-.66 1.44-.03.83.84.97 1.53.97.42 0 .53.2.5.44-.54.77-1.46 1.25-2.47 1.25-.38 0-.73-.09-1.06-.22.22-.44-.28-1.31-.75-1.59-.23-.23-.72-.14-1-.25-.09-.27-.18-.54-.19-.84.03-.05.08-.09.16-.09.19 0 .45.38.59.34.18-.04-.74-1.31-.31-1.56.2-.12.6.39.47-.16-.12-.51.36-.28.66-.41.26-.11.45-.41.13-.59-.06-.03-.13-.1-.22-.19.45-.27.97-.44 1.53-.44zm2.31 1.09c.18.22.32.46.44.72 0 .01 0 .02 0 .03-.04.07-.11.11-.22.22-.28.28-.32-.21-.44-.31-.13-.12-.6.02-.66-.13-.07-.18.5-.42.88-.53z"
-;;  ;;   />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M7.03 0l-3.03 3-1-1-3 3.03 1 1 2-2.03 1 1 4-4-.97-1zm-7.03 7v1h8v-1h-8z" />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M0 0v1h1v-1h-1zm2 0v1h1v-1h-1zm2 0v1h1v-1h-1zm2 0v1h1v-1h-1zm-6 2v1h1v-1h-1zm2 0v1h1v-1h-1zm2 0v1h1v-1h-1zm2 0v1h1v-1h-1zm-6 2v1h1v-1h-1zm2 0v1h1v-1h-1zm2 0v1h1v-1h-1zm2 0v1h1v-1h-1zm-6 2v1h1v-1h-1zm2 0v1h1v-1h-1zm2 0v1h1v-1h-1zm2 0v1h1v-1h-1z"
-;;  ;;   />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M0 0v2h2v-2h-2zm3 0v2h2v-2h-2zm3 0v2h2v-2h-2zm-6 3v2h2v-2h-2zm3 0v2h2v-2h-2zm3 0v2h2v-2h-2zm-6 3v2h2v-2h-2zm3 0v2h2v-2h-2zm3 0v2h2v-2h-2z" />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M0 0v3h3v-3h-3zm5 0v3h3v-3h-3zm-5 5v3h3v-3h-3zm5 0v3h3v-3h-3z" />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M.19 0c-.11 0-.19.08-.19.19v3.31c0 .28.22.5.5.5h6c.28 0 .5-.22.5-.5v-3.31c0-.11-.08-.19-.19-.19h-6.63zm-.19 4.91v2.91c0 .11.08.19.19.19h6.63c.11 0 .19-.08.19-.19v-2.91c-.16.06-.32.09-.5.09h-6c-.18 0-.34-.04-.5-.09zm5.5 1.09c.28 0 .5.22.5.5s-.22.5-.5.5-.5-.22-.5-.5.22-.5.5-.5z"
-;;  ;;   />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M0 0v1h.5c.28 0 .5.22.5.5v4c0 .28-.22.5-.5.5h-.5v1h3v-1h-.5c-.28 0-.5-.22-.5-.5v-1.5h3v1.5c0 .28-.22.5-.5.5h-.5v1h3v-1h-.5c-.28 0-.5-.22-.5-.5v-4c0-.28.22-.5.5-.5h.5v-1h-3v1h.5c.28 0 .5.22.5.5v1.5h-3v-1.5c0-.28.22-.5.5-.5h.5v-1h-3z" />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M4 0c-1.65 0-3 1.35-3 3v1h-.5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-3.5c0-1.11.89-2 2-2 1.11 0 2 .89 2 2v3.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-.5v-1c0-1.65-1.35-3-3-3z" />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M2 0c-.55 0-1.04.23-1.41.59-.36.36-.59.85-.59 1.41 0 .55.23 1.04.59 1.41l3.41 3.41 3.41-3.41c.36-.36.59-.85.59-1.41 0-.55-.23-1.04-.59-1.41-.36-.36-.85-.59-1.41-.59-.55 0-1.04.23-1.41.59-.36.36-.59.85-.59 1.41 0-.55-.23-1.04-.59-1.41-.36-.36-.85-.59-1.41-.59z"
-;;  ;;   transform="translate(0 1)" />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M4 0l-4 3h1v4h2v-2h2v2h2v-4.03l1 .03-4-3z" />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M0 0v8h8v-8h-8zm1 1h6v3l-1-1-1 1 2 2v1h-1l-4-4-1 1v-3z" />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M.19 0c-.11 0-.19.08-.19.19v7.63c0 .11.08.19.19.19h7.63c.11 0 .19-.08.19-.19v-7.63c0-.11-.08-.19-.19-.19h-7.63zm.81 2h6v3h-1l-1 1h-2l-1-1h-1v-3z" />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M2 0c-1.31 0-2 1.01-2 2s.69 2 2 2c.79 0 1.42-.56 2-1.22.58.66 1.19 1.22 2 1.22 1.31 0 2-1.01 2-2s-.69-2-2-2c-.81 0-1.42.56-2 1.22-.58-.66-1.21-1.22-2-1.22zm0 1c.42 0 .88.47 1.34 1-.46.53-.92 1-1.34 1-.74 0-1-.54-1-1 0-.46.26-1 1-1zm4 0c.74 0 1 .54 1 1 0 .46-.26 1-1 1-.43 0-.89-.47-1.34-1 .46-.53.91-1 1.34-1z"
-;;  ;;   transform="translate(0 2)" />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M3 0c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm-1.5 2.5c-.83 0-1.5.67-1.5 1.5h1c0-.28.22-.5.5-.5s.5.22.5.5-1 1.64-1 2.5c0 .86.67 1.5 1.5 1.5s1.5-.67 1.5-1.5h-1c0 .28-.22.5-.5.5s-.5-.22-.5-.5c0-.36 1-1.84 1-2.5 0-.81-.67-1.5-1.5-1.5z" transform="translate(2)"
-;;  ;;   />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M2 0v1h1.63l-.06.13-2 5-.34.88h-1.22v1h5v-1h-1.63l.06-.13 2-5 .34-.88h1.22v-1h-5z" />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M0 0v1h8v-1h-8zm0 2v1h8v-1h-8zm0 2v1h8v-1h-8zm1 2v1h6v-1h-6z" />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M0 0v1h8v-1h-8zm0 2v1h8v-1h-8zm0 2v1h8v-1h-8zm0 2v1h6v-1h-6z" />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M0 0v1h8v-1h-8zm0 2v1h8v-1h-8zm0 2v1h8v-1h-8zm2 2v1h6v-1h-6z" />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M5.5 0c-1.38 0-2.5 1.12-2.5 2.5 0 .16 0 .32.03.47l-3.03 3.03v2h3v-2h2v-1l.03-.03c.15.03.31.03.47.03 1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5zm.5 1c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z" />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M1.34 0a.5.5 0 0 0-.34.5v3.5h-1v1.5c0 .28.22.5.5.5h7.010000000000001c.28 0 .5-.22.5-.5v-1.5h-1v-3.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0-.09 0 .5.5 0 0 0-.06 0zm.66 1h4v3h-1v1h-2v-1h-1v-3z" transform="translate(0 1)" />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M0 0v4h4v-4h-4zm5 2v3h-3v1h4v-4h-1zm2 2v3h-3v1h4v-4h-1z" />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M3.41 0a.5.5 0 0 0-.13.06l-3 1.5a.5.5 0 1 0 .44.88l3-1.5a.5.5 0 0 0-.31-.94zm1 1.5a.5.5 0 0 0-.13.06l-4 2a.5.5 0 1 0 .44.88l4-2a.5.5 0 0 0-.31-.94zm0 2a.5.5 0 0 0-.13.06l-3 1.5a.5.5 0 0 0 .22.94h2a.5.5 0 0 0 .16-1l1.06-.56a.5.5 0 0 0-.31-.94zm-2.56 3.5a.5.5 0 0 0 .16 1h1a.5.5 0 1 0 0-1h-1a.5.5 0 0 0-.09 0 .5.5 0 0 0-.06 0z"
-;;  ;;   transform="translate(1)" />
-;;  ;;[:svg {:xmlns "http://www.w3.org/2000/svg" :width "8" :height "8" :viewBox "0 0 8 8" :fill color}]
-;;  ;;   [:path] {}:d "M2 0v1h-1v1h2v-2h-1zm3.88.03c-.18.01-.36.03-.53.09-.27.1-.53.25-.75.47l-.44.44a.5.5 0 1 0 .69.69l.44-.44c.11-.11.24-.17.38-.22.35-.12.78-.07 1.06.22.39.39.39 1.04 0 1.44l-1.5 1.5a.5.5 0 1 0 .69.69l1.5-1.5c.78-.78.78-2.04 0-2.81-.28-.28-.61-.45-.97-.53-.18-.04-.38-.04-.56-.03zm-3.59 2.91a.5.5 0 0 0-.19.16l-1.5 1.5c-.78.78-.78 2.04 0 2.81.56.56 1.36.72 2.06.47.27-.1.53-.25.75-.47l.44-.44a.5.5 0 1 0-.69-.69l-.44.44c-.11.11-.24.17-.38.22-.35.12-.78.07-1.06-.22-.39-.39-.39-1.04 0-1.44l1.5-1.5a.5.5 0 0 0-.44-.84.5.5 0 0 0-.06 0zm2.72 3.06v2h1v-1h1v-1h-2z"
-;;  ;;   />
+
+(defn globe [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M4 0c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 1c.33 0 .64.09.94.19-.21.2-.45.38-.41.56.04.18.69.13.69.5 0 .27-.42.35-.13.66.35.35-.64.98-.66 1.44-.03.83.84.97 1.53.97.42 0 .53.2.5.44-.54.77-1.46 1.25-2.47 1.25-.38 0-.73-.09-1.06-.22.22-.44-.28-1.31-.75-1.59-.23-.23-.72-.14-1-.25-.09-.27-.18-.54-.19-.84.03-.05.08-.09.16-.09.19 0 .45.38.59.34.18-.04-.74-1.31-.31-1.56.2-.12.6.39.47-.16-.12-.51.36-.28.66-.41.26-.11.45-.41.13-.59-.06-.03-.13-.1-.22-.19.45-.27.97-.44 1.53-.44zm2.31 1.09c.18.22.32.46.44.72 0 .01 0 .02 0 .03-.04.07-.11.11-.22.22-.28.28-.32-.21-.44-.31-.13-.12-.6.02-.66-.13-.07-.18.5-.42.88-.53z"}]]])
+
+(defn graph [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M7.03 0l-3.03 3-1-1-3 3.03 1 1 2-2.03 1 1 4-4-.97-1zm-7.03 7v1h8v-1h-8z"}]]])
+
+(defn grid-four-up [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M0 0v1h1v-1h-1zm2 0v1h1v-1h-1zm2 0v1h1v-1h-1zm2 0v1h1v-1h-1zm-6 2v1h1v-1h-1zm2 0v1h1v-1h-1zm2 0v1h1v-1h-1zm2 0v1h1v-1h-1zm-6 2v1h1v-1h-1zm2 0v1h1v-1h-1zm2 0v1h1v-1h-1zm2 0v1h1v-1h-1zm-6 2v1h1v-1h-1zm2 0v1h1v-1h-1zm2 0v1h1v-1h-1zm2 0v1h1v-1h-1z"}]]])
+
+(defn grid-three-up [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M0 0v2h2v-2h-2zm3 0v2h2v-2h-2zm3 0v2h2v-2h-2zm-6 3v2h2v-2h-2zm3 0v2h2v-2h-2zm3 0v2h2v-2h-2zm-6 3v2h2v-2h-2zm3 0v2h2v-2h-2zm3 0v2h2v-2h-2z"}]]])
+
+(defn grid-two-up [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M0 0v3h3v-3h-3zm5 0v3h3v-3h-3zm-5 5v3h3v-3h-3zm5 0v3h3v-3h-3z"}]]])
+
+(defn hard-drive [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M.19 0c-.11 0-.19.08-.19.19v3.31c0 .28.22.5.5.5h6c.28 0 .5-.22.5-.5v-3.31c0-.11-.08-.19-.19-.19h-6.63zm-.19 4.91v2.91c0 .11.08.19.19.19h6.63c.11 0 .19-.08.19-.19v-2.91c-.16.06-.32.09-.5.09h-6c-.18 0-.34-.04-.5-.09zm5.5 1.09c.28 0 .5.22.5.5s-.22.5-.5.5-.5-.22-.5-.5.22-.5.5-.5z"}]]])
+
+(defn header [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M0 0v1h.5c.28 0 .5.22.5.5v4c0 .28-.22.5-.5.5h-.5v1h3v-1h-.5c-.28 0-.5-.22-.5-.5v-1.5h3v1.5c0 .28-.22.5-.5.5h-.5v1h3v-1h-.5c-.28 0-.5-.22-.5-.5v-4c0-.28.22-.5.5-.5h.5v-1h-3v1h.5c.28 0 .5.22.5.5v1.5h-3v-1.5c0-.28.22-.5.5-.5h.5v-1h-3z"}]]])
+
+(defn headphones [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M4 0c-1.65 0-3 1.35-3 3v1h-.5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-3.5c0-1.11.89-2 2-2 1.11 0 2 .89 2 2v3.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-.5v-1c0-1.65-1.35-3-3-3z"}]]])
+
+(defn heart [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M2 0c-.55 0-1.04.23-1.41.59-.36.36-.59.85-.59 1.41 0 .55.23 1.04.59 1.41l3.41 3.41 3.41-3.41c.36-.36.59-.85.59-1.41 0-.55-.23-1.04-.59-1.41-.36-.36-.85-.59-1.41-.59-.55 0-1.04.23-1.41.59-.36.36-.59.85-.59 1.41 0-.55-.23-1.04-.59-1.41-.36-.36-.85-.59-1.41-.59z"
+            :transform "translate(0 1)"}]]])
+
+(defn home [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M4 0l-4 3h1v4h2v-2h2v2h2v-4.03l1 .03-4-3z"}]]])
+
+(defn image [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M0 0v8h8v-8h-8zm1 1h6v3l-1-1-1 1 2 2v1h-1l-4-4-1 1v-3z"}]]])
+
+(defn inbox [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M.19 0c-.11 0-.19.08-.19.19v7.63c0 .11.08.19.19.19h7.63c.11 0 .19-.08.19-.19v-7.63c0-.11-.08-.19-.19-.19h-7.63zm.81 2h6v3h-1l-1 1h-2l-1-1h-1v-3z"}]]])
+
+(defn infinity [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M2 0c-1.31 0-2 1.01-2 2s.69 2 2 2c.79 0 1.42-.56 2-1.22.58.66 1.19 1.22 2 1.22 1.31 0 2-1.01 2-2s-.69-2-2-2c-.81 0-1.42.56-2 1.22-.58-.66-1.21-1.22-2-1.22zm0 1c.42 0 .88.47 1.34 1-.46.53-.92 1-1.34 1-.74 0-1-.54-1-1 0-.46.26-1 1-1zm4 0c.74 0 1 .54 1 1 0 .46-.26 1-1 1-.43 0-.89-.47-1.34-1 .46-.53.91-1 1.34-1z" :transform "translate(0 2)"}]]])
+
+(defn info [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M3 0c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm-1.5 2.5c-.83 0-1.5.67-1.5 1.5h1c0-.28.22-.5.5-.5s.5.22.5.5-1 1.64-1 2.5c0 .86.67 1.5 1.5 1.5s1.5-.67 1.5-1.5h-1c0 .28-.22.5-.5.5s-.5-.22-.5-.5c0-.36 1-1.84 1-2.5 0-.81-.67-1.5-1.5-1.5z" :transform "translate(2)"}]]])
+
+(defn italic [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M2 0v1h1.63l-.06.13-2 5-.34.88h-1.22v1h5v-1h-1.63l.06-.13 2-5 .34-.88h1.22v-1h-5z"}]]])
+
+(defn justify-center [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M0 0v1h8v-1h-8zm0 2v1h8v-1h-8zm0 2v1h8v-1h-8zm1 2v1h6v-1h-6z"}]]])
+
+(defn justify-left [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M0 0v1h8v-1h-8zm0 2v1h8v-1h-8zm0 2v1h8v-1h-8zm0 2v1h6v-1h-6z"}]]])
+
+(defn justify-right [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M0 0v1h8v-1h-8zm0 2v1h8v-1h-8zm0 2v1h8v-1h-8zm2 2v1h6v-1h-6z"}]]])
+
+(defn key-icon [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M5.5 0c-1.38 0-2.5 1.12-2.5 2.5 0 .16 0 .32.03.47l-3.03 3.03v2h3v-2h2v-1l.03-.03c.15.03.31.03.47.03 1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5zm.5 1c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"}]]])
+
+(defn laptop [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M1.34 0a.5.5 0 0 0-.34.5v3.5h-1v1.5c0 .28.22.5.5.5h7.010000000000001c.28 0 .5-.22.5-.5v-1.5h-1v-3.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0-.09 0 .5.5 0 0 0-.06 0zm.66 1h4v3h-1v1h-2v-1h-1v-3z" :transform "translate(0 1)"}]]])
+
+(defn layers [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M0 0v4h4v-4h-4zm5 2v3h-3v1h4v-4h-1zm2 2v3h-3v1h4v-4h-1z"}]]])
+
+(defn lightbulb [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M3.41 0a.5.5 0 0 0-.13.06l-3 1.5a.5.5 0 1 0 .44.88l3-1.5a.5.5 0 0 0-.31-.94zm1 1.5a.5.5 0 0 0-.13.06l-4 2a.5.5 0 1 0 .44.88l4-2a.5.5 0 0 0-.31-.94zm0 2a.5.5 0 0 0-.13.06l-3 1.5a.5.5 0 0 0 .22.94h2a.5.5 0 0 0 .16-1l1.06-.56a.5.5 0 0 0-.31-.94zm-2.56 3.5a.5.5 0 0 0 .16 1h1a.5.5 0 1 0 0-1h-1a.5.5 0 0 0-.09 0 .5.5 0 0 0-.06 0z" :transform "translate(1)"}]]])
+
+(defn link-broken [style color size]
+  [:div style
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
+    [:path {:d "M2 0v1h-1v1h2v-2h-1zm3.88.03c-.18.01-.36.03-.53.09-.27.1-.53.25-.75.47l-.44.44a.5.5 0 1 0 .69.69l.44-.44c.11-.11.24-.17.38-.22.35-.12.78-.07 1.06.22.39.39.39 1.04 0 1.44l-1.5 1.5a.5.5 0 1 0 .69.69l1.5-1.5c.78-.78.78-2.04 0-2.81-.28-.28-.61-.45-.97-.53-.18-.04-.38-.04-.56-.03zm-3.59 2.91a.5.5 0 0 0-.19.16l-1.5 1.5c-.78.78-.78 2.04 0 2.81.56.56 1.36.72 2.06.47.27-.1.53-.25.75-.47l.44-.44a.5.5 0 1 0-.69-.69l-.44.44c-.11.11-.24.17-.38.22-.35.12-.78.07-1.06-.22-.39-.39-.39-1.04 0-1.44l1.5-1.5a.5.5 0 0 0-.44-.84.5.5 0 0 0-.06 0zm2.72 3.06v2h1v-1h1v-1h-2z"}]]])
 
 (defn link-intact [style color size]
   [:div style
