@@ -1,8 +1,11 @@
-(defproject clojure-inline-svgs "0.1.0-SNAPSHOT"
+(defproject com.stronganchortech/clojure-inline-svgs "0.1.0-SNAPSHOT"
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.946"]
-                 [javax.xml.bind/jaxb-api "2.2.11"]
+                 [javax.xml.bind/jaxb-api "2.2.11"] ;; this is to workaround a Java issue on my machine
                  [reagent "0.7.0"]]
+  :description "Inline svgs for ClojureScript / Reagent / Hiccup"
+  :license {:name "MIT License"
+            :url "http://opensource.org/licenses/MIT"}
 
   :min-lein-version "2.5.3"
 

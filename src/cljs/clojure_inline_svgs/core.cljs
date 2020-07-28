@@ -62,6 +62,14 @@
                          (reset! size-cursor (-> e .-target .-value)))}]
    [:span {} @size-cursor "px"]])
 
+(defn your-reagent-component []
+  [:div {:style {:padding "40px"}}
+   [open-iconic/check 
+    {:on-click (fn [e] (println "Icon clicked."))}
+    "green"
+    "24px"]
+   [:p "There's an inline svg in this div!"]])
+
 (defn page [ratom]
   [:div {:style {:font-family "sans-serif"}}
    [:h1
@@ -70,6 +78,27 @@
    [:p "Licensed under the "
     [:a {:href "http://opensource.org/licenses/MIT"} "MIT License"]
     " (the same license as open-iconic)."]
+   [:div {:style {:display :flex
+                  :align-items :center}}
+    [:pre
+     [:code
+      "In your project.clj's dependencies:\n
+      [com.stronganchortech/clojure-inline-svgs \"1.0.0\"]
+     
+To use:
+      (ns your-cool-project.core
+        (:require
+         [clojure-inline-svgs.open-iconic :as open-iconic]))
+
+      (defn your-reagent-component []
+        [:div
+          [open-iconic/check 
+            {:on-click (fn [e] (println \"Icon clicked.\"))}
+            \"green\"
+            \"24px\"]
+          [:p \"There's an inline svg in this div!\"]])
+     "]]
+    [your-reagent-component]]
    [color-picker (reagent/cursor ratom [:color])]
    [size-picker  (reagent/cursor ratom [:size])]
    [:div {:style {:display :flex
