@@ -21,12 +21,16 @@
 
 (defn color-picker [color-cursor]
   [:div {:style {:display :flex
-                 :flex-direction :row}}
+                 :flex-direction :row
+                 :align-items :center}}
    (doall (map (fn [color]
                  ^{:key color}
-                 [:div {:style {:width "50px" :height "50px"
+                 [:div {:style
+                        (merge {:width "50px" :height "50px"
                                 :background-color color
-                                :margin "0px 5px"}
+                                :margin "5px 5px 5px 5px"}
+                               (when (= color @color-cursor)
+                                 {:border "5px solid"}))
                         :on-click (fn [e]
                                     (reset! color-cursor color))}])
                ["black" "red" "blue"]))])
@@ -43,9 +47,9 @@
    [:span {} @size-cursor "px"]])
 
 (defn page [ratom]
-  [:div
+  [:div {:style {:font-family "sans-serif"}}
    [:h1
-    "Inline Hiccup SVGs from "
+    "Inline ClojureScript/Reagent/Hiccup SVGs from "
     [:a {:href "https://github.com/iconic/open-iconic"} "Open Iconic"]]
    [:p "Licensed under the "
     [:a {:href "http://opensource.org/licenses/MIT"} "MIT License"]
