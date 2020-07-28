@@ -19,21 +19,37 @@
    [icon-fn {} color (str size "px")]
    [:p {} display-name]])
 
+(defn is-valid-hex-string? [s]
+  (or (re-matches #"[a-fA-F0-9]{6}" s)
+      (re-matches #"[a-fA-F0-9]{8}" s)))
+
 (defn color-picker [color-cursor]
-  [:div {:style {:display :flex
-                 :flex-direction :row
-                 :align-items :center}}
-   (doall (map (fn [color]
-                 ^{:key color}
-                 [:div {:style
-                        (merge {:width "50px" :height "50px"
-                                :background-color color
-                                :margin "5px 5px 5px 5px"}
-                               (when (= color @color-cursor)
-                                 {:border "5px solid"}))
-                        :on-click (fn [e]
-                                    (reset! color-cursor color))}])
-               ["black" "red" "blue"]))])
+  (let [hex-input (reagent/atom "")]
+    (fn []
+      [:div {:style {:display :flex
+                     :flex-direction :row
+                     :align-items :center}}
+       (doall (map (fn [color]
+                     ^{:key color}
+                     [:div {:style
+                            (merge {:width "50px" :height "50px"
+                                    :background-color color
+                                    :margin "5px 5px 5px 5px"}
+                                   (when (= color @color-cursor)
+                                     {:border "5px solid"}))
+                            :on-click (fn [e]
+                                        (reset! color-cursor color))}])
+                   ["black" "red" "blue" "green" "orange"]))
+       [:label {:for "hex-input"
+                :style {:padding-left "10px"}} "#"]
+       [:input {:type :text :value @hex-input
+                :id "hex-input"
+                :placeholder "00abff"
+                :on-change (fn [e]
+                             (let [v (-> e .-target .-value)]
+                               (reset! hex-input v)
+                               (when (is-valid-hex-string? v)
+                                 (reset! color-cursor (str "#" v)))))}]])))
 
 (defn size-picker [size-cursor]
   [:div {:style {:display :flex
