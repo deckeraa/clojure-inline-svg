@@ -5,17 +5,18 @@
    ))
 
 (defonce app-state
-  (reagent/atom {:color "black"}))
+  (reagent/atom {:color "black"
+                 :size  24}))
 
-(defn icon-card [color [icon-fn display-name]]
+(defn icon-card [color size [icon-fn display-name]]
   ^{:key display-name}
   [:div {:style {:display :flex
                  :align-items :center
                  :text-align :center
                  :flex-direction :column
                  :padding "20px 10px"
-                 :width "100px"}}
-   [icon-fn {} color "24px"]
+                 :min-width "150px"}}
+   [icon-fn {} color (str size "px")]
    [:p {} display-name]])
 
 (defn color-picker [color-cursor]
@@ -30,20 +31,32 @@
                                     (reset! color-cursor color))}])
                ["black" "red" "blue"]))])
 
+(defn size-picker [size-cursor]
+  [:div {:style {:display :flex
+                 :align-items :center}}
+   [:input {:type :range
+            :id "size-picker"
+            :min "8" :max "192"
+            :value @size-cursor
+            :on-change (fn [e]
+                         (reset! size-cursor (-> e .-target .-value)))}]
+   [:span {} @size-cursor "px"]])
+
 (defn page [ratom]
   [:div
    [:h1
     "Inline Hiccup SVGs from "
     [:a {:href "https://github.com/iconic/open-iconic"} "Open Iconic"]]
-   [:p {} (str @ratom)]
    [:p "Licensed under the "
     [:a {:href "http://opensource.org/licenses/MIT"} "MIT License"]
     " (the same license as open-iconic)."]
    [color-picker (reagent/cursor ratom [:color])]
+   [size-picker  (reagent/cursor ratom [:size])]
    [:div {:style {:display :flex
                   :flex-wrap :wrap}}
-    (doall (map (partial icon-card (:color @ratom))
-                ;; 
+    (doall (map (partial icon-card (:color @ratom) (:size @ratom))
+                ;; Use a vector that contains the function and the function name so that we
+                ;; avoid issues with fn names getting munged during the cljs->js process.
                 [[open-iconic/account-login "account-login"]
                  [open-iconic/account-logout "account-logout"]
                  [open-iconic/action-redo "action-redo"]
