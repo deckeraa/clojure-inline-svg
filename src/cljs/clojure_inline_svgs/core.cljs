@@ -5,30 +5,44 @@
    ))
 
 (defonce app-state
-  (reagent/atom {}))
+  (reagent/atom {:color "black"}))
 
-(defn icon-card [[icon-fn display-name]]
+(defn icon-card [color [icon-fn display-name]]
+  ^{:key display-name}
   [:div {:style {:display :flex
                  :align-items :center
                  :text-align :center
-;                 :justify-content :center
                  :flex-direction :column
                  :padding "20px 10px"
                  :width "100px"}}
-   [icon-fn {} "black" "24px"]
+   [icon-fn {} color "24px"]
    [:p {} display-name]])
+
+(defn color-picker [color-cursor]
+  [:div {:style {:display :flex
+                 :flex-direction :row}}
+   (doall (map (fn [color]
+                 ^{:key color}
+                 [:div {:style {:width "50px" :height "50px"
+                                :background-color color
+                                :margin "0px 5px"}
+                        :on-click (fn [e]
+                                    (reset! color-cursor color))}])
+               ["black" "red" "blue"]))])
 
 (defn page [ratom]
   [:div
    [:h1
     "Inline Hiccup SVGs from "
     [:a {:href "https://github.com/iconic/open-iconic"} "Open Iconic"]]
+   [:p {} (str @ratom)]
    [:p "Licensed under the "
     [:a {:href "http://opensource.org/licenses/MIT"} "MIT License"]
     " (the same license as open-iconic)."]
+   [color-picker (reagent/cursor ratom [:color])]
    [:div {:style {:display :flex
                   :flex-wrap :wrap}}
-    (doall (map icon-card
+    (doall (map (partial icon-card (:color @ratom))
                 ;; 
                 [[open-iconic/account-login "account-login"]
                  [open-iconic/account-logout "account-logout"]

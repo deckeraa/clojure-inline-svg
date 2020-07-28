@@ -2,441 +2,441 @@
 
 (defn account-login [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M3 0v1h4v5h-4v1h5v-7h-5zm1 2v1h-4v1h4v1l2-1.5-2-1.5z"}]]])
 
 (defn account-logout [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M3 0v1h4v5h-4v1h5v-7h-5zm-1 2l-2 1.5 2 1.5v-1h4v-1h-4v-1z"}]]])
 
 (defn action-redo [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M3.5 0c-1.93 0-3.5 1.57-3.5 3.5 0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5v.5h-1l2 2 2-2h-1v-.5c0-1.93-1.57-3.5-3.5-3.5z" :transform "translate(0 1)"}]]])
 
 (defn action-undo [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4.5 0c-1.93 0-3.5 1.57-3.5 3.5v.5h-1l2 2 2-2h-1v-.5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5c0-1.93-1.57-3.5-3.5-3.5z" :transform "translate(0 1)"}]]])
 
 (defn align-center [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M0 0v1h8v-1h-8zm1 2v1h6v-1h-6zm-1 2v1h8v-1h-8zm1 2v1h6v-1h-6z"}]]])
 
 (defn align-left  [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M0 0v1h8v-1h-8zm0 2v1h6v-1h-6zm0 2v1h8v-1h-8zm0 2v1h6v-1h-6z"}]]])
 
 (defn align-right [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M0 0v1h8v-1h-8zm2 2v1h6v-1h-6zm-2 2v1h8v-1h-8zm2 2v1h6v-1h-6z"}]]])
 
 (defn aperture [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4 0c-.69 0-1.34.19-1.91.5l3.22 2.34.75-2.25c-.6-.36-1.31-.59-2.06-.59zm-2.75 1.13c-.76.73-1.25 1.74-1.25 2.88 0 .25.02.48.06.72l3.09-2.22-1.91-1.38zm5.63.13l-1.22 3.75h2.19c.08-.32.16-.65.16-1 0-1.07-.44-2.03-1.13-2.75zm-4.72 3.22l-1.75 1.25c.55 1.13 1.6 1.99 2.88 2.22l-1.13-3.47zm1.56 1.53l.63 1.97c1.33-.12 2.46-.88 3.09-1.97h-3.72z"}]]])
 
 (defn arrow-bottom [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M2 0v5h-2l2.53 3 2.47-3h-2v-5h-1z" :transform "translate(1)"}]]])
 
 (defn arrow-circle-bottom [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4 0c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm-1 1h2v3h2l-3 3-3-3h2v-3z"}]]])
 
 (defn arrow-circle-left [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4 0c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 1v2h3v2h-3v2l-3-3 3-3z"}]]])
 
 (defn arrow-circle-right [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4 0c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 1l3 3-3 3v-2h-3v-2h3v-2z"}]]])
 
 (defn arrow-circle-top [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4 0c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 1l3 3h-2v3h-2v-3h-2l3-3z"}]]])
 
 (defn arrow-left [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M3 0l-3 2.53 3 2.47v-2h5v-1h-5v-2z" :transform "translate(0 1)"}]]])
 
 (defn arrow-right [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M5 0v2h-5v1h5v2l3-2.53-3-2.47z" :transform "translate(0 1)"}]]])
 
 (defn arrow-thick-bottom [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M2 0v5h-2l3.03 3 2.97-3h-2v-5h-2z" :transform "translate(1)"}]]])
 
 (defn arrow-thick-left [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M3 0l-3 3.03 3 2.97v-2h5v-2h-5v-2z" :transform "translate(0 1)"}]]])
 
 (defn arrow-thick-right [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M5 0v2h-5v2h5v2l3-3.03-3-2.97z" :transform "translate(0 1)"}]]])
 
 (defn arrow-thick-top [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M2.97 0l-2.97 3h2v5h2v-5h2l-3.03-3z" :transform "translate(1)"}]]])
 
 (defn arrow-top [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M2.47 0l-2.47 3h2v5h1v-5h2l-2.53-3z" :transform "translate(1)"}]]])
 
 (defn audio-spectrum[style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4 0v8h1v-8h-1zm-2 1v6h1v-6h-1zm4 1v4h1v-4h-1zm-6 1v2h1v-2h-1z"}]]])
 
 (defn audio [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M1.16 0c-.72.72-1.16 1.71-1.16 2.81s.43 2.12 1.16 2.84l.72-.72c-.54-.54-.88-1.29-.88-2.13 0-.83.33-1.55.88-2.09l-.72-.72zm5.69 0l-.72.72c.54.54.88 1.26.88 2.09 0 .83-.33 1.58-.88 2.13l.72.72c.72-.72 1.16-1.74 1.16-2.84 0-1.1-.43-2.09-1.16-2.81zm-4.25 1.41c-.36.36-.59.86-.59 1.41 0 .55.23 1.08.59 1.44l.69-.72c-.18-.18-.28-.44-.28-.72 0-.28.1-.5.28-.69l-.69-.72zm2.81 0l-.69.72c.18.18.28.41.28.69 0 .28-.1.54-.28.72l.69.72c.36-.36.59-.89.59-1.44 0-.55-.23-1.05-.59-1.41z"
             :transform "translate(0 1)"}]]])
 
 (defn badge [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M2 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-1 4.81v3.19l1-1 1 1v-3.19c-.31.11-.65.19-1 .19s-.69-.08-1-.19z" :transform "translate(2)"}]]])
 
 (defn ban [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4 0c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm0 1c.66 0 1.26.21 1.75.56l-4.19 4.19c-.35-.49-.56-1.09-.56-1.75 0-1.66 1.34-3 3-3zm2.44 1.25c.35.49.56 1.09.56 1.75 0 1.66-1.34 3-3 3-.66 0-1.26-.21-1.75-.56l4.19-4.19z"}]]])
 
 (defn bar-chart [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M0 0v7h8v-1h-7v-6h-1zm5 0v5h2v-5h-2zm-3 2v3h2v-3h-2z"}]]])
 
 (defn basket [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M3.97 0c-.13.01-.26.08-.34.19l-2.34 2.81h-1.28v1h1v3.66c0 .18.16.34.34.34h5.31c.18 0 .34-.16.34-.34v-3.66h1v-1h-1.28c-.27-.33-2.39-2.86-2.41-2.88-.11-.09-.22-.14-.34-.13zm.03 1.28l1.44 1.72h-2.88l1.44-1.72zm-1.5 3.72c.28 0 .5.22.5.5v1c0 .28-.22.5-.5.5s-.5-.22-.5-.5v-1c0-.28.22-.5.5-.5zm3 0c.28 0 .5.22.5.5v1c0 .28-.22.5-.5.5s-.5-.22-.5-.5v-1c0-.28.22-.5.5-.5z"}]]])
 
 (defn battery-empty [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M.09 0c-.06 0-.09.04-.09.09v5.81c0 .05.04.09.09.09h6.81c.05 0 .09-.04.09-.09v-1.91h1v-2h-1v-1.91c0-.06-.04-.09-.09-.09h-6.81zm.91 1h5v4h-5v-4z" :transform "translate(0 1)"}]]])
 
 (defn battery-full [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M.09 0c-.06 0-.09.04-.09.09v5.81c0 .05.04.09.09.09h6.81c.05 0 .09-.04.09-.09v-1.91h1v-2h-1v-1.91c0-.06-.04-.09-.09-.09h-6.81z" :transform "translate(0 1)"}]]])
 
 (defn beaker [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M1.34 0a.5.5 0 0 0 .16 1h.5v1.41c-.09.17-1.2 2.31-1.66 3.09-.16.26-.34.61-.34 1.06 0 .39.15.77.41 1.03s.64.41 1.03.41h5.13c.38 0 .74-.16 1-.41h.03c.26-.26.41-.64.41-1.03 0-.45-.19-.8-.34-1.06-.46-.78-1.57-2.92-1.66-3.09v-1.41h.5a.5.5 0 1 0 0-1h-5a.5.5 0 0 0-.09 0 .5.5 0 0 0-.06 0zm1.66 1h2v1.63l.06.09s.63 1.23 1.19 2.28h-4.5c.56-1.05 1.19-2.28 1.19-2.28l.06-.09v-1.63z"}]]])
 
 (defn bell [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4 0c-1.1 0-2 .9-2 2 0 1.04-.52 1.98-1.34 2.66-.41.34-.66.82-.66 1.34h8c0-.52-.24-1-.66-1.34-.82-.68-1.34-1.62-1.34-2.66 0-1.1-.89-2-2-2zm-1 7c0 .55.45 1 1 1s1-.45 1-1h-2z"}]]])
 
 (defn bluetooth [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M1.5 0v2.5l-.75-.75-.75.75 1.5 1.5-1.5 1.5.75.75.75-.75v2.5h.5l3.5-2.5-2.25-1.53 2.25-1.47-3.5-2.5h-.5zm1 1.5l1.5 1-1.5 1v-2zm0 3l1.5 1-1.5 1v-2z" :transform "translate(1)"}]]])
 
 (defn bold [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M0 0v1c.55 0 1 .45 1 1v4c0 .55-.45 1-1 1v1h5.5c1.38 0 2.5-1.12 2.5-2.5 0-1-.59-1.85-1.44-2.25.27-.34.44-.78.44-1.25 0-1.1-.89-2-2-2h-5zm3 1h1c.55 0 1 .45 1 1s-.45 1-1 1h-1v-2zm0 3h1.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-1.5v-3z"}]]])
 
 (defn bolt [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M3 0l-3 5h2v3l3-5h-2v-3z" :transform "translate(1)"}]]])
 
 (defn bookmark [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M0 0v8l2-2 2 2v-8h-4z" :transform "translate(2)"}]]])
 
 (defn book [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M1 0c-.07 0-.13.01-.19.03-.39.08-.7.39-.78.78-.03.06-.03.12-.03.19v5.5c0 .83.67 1.5 1.5 1.5h5.5v-1h-5.5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h5.5v-5.5c0-.28-.22-.5-.5-.5h-.5v3l-1-1-1 1v-3h-3z"}]]])
 
 (defn box [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M0 0v1h8v-1h-8zm0 2v5.91c0 .05.04.09.09.09h7.81c.05 0 .09-.04.09-.09v-5.91h-2.97v1.03h-2.03v-1.03h-3z"}]]])
 
 (defn briefcase [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M3 0c-.55 0-1 .45-1 1v1h-1.91c-.06 0-.09.04-.09.09v2.41c0 .28.22.5.5.5h7c.28 0 .5-.22.5-.5v-2.41c0-.06-.04-.09-.09-.09h-1.91v-1c0-.55-.45-1-1-1h-2zm0 1h2v1h-2v-1zm-3 4.91v2c0 .05.04.09.09.09h7.81c.05 0 .09-.04.09-.09v-2c-.16.06-.32.09-.5.09h-7c-.18 0-.34-.04-.5-.09z"}]]])
 
 (defn british-pound [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M3 0c-.62 0-1.16.26-1.5.69-.34.43-.5.99-.5 1.56 0 .69.16 1.25.25 1.75h-1.25v1h1.22c-.11.45-.37.96-1.06 1.66l-.16.13v1.22h6v-1h-4.91c.64-.73.98-1.4 1.13-2h1.78v-1h-1.72c-.08-.68-.28-1.24-.28-1.75 0-.39.11-.73.28-.94.17-.21.37-.31.72-.31.39 0 .61.11.75.25s.25.36.25.75h1c0-.58-.17-1.1-.53-1.47-.37-.37-.89-.53-1.47-.53z"
             :transform "translate(1)"}]]])
 
 (defn browser [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M.34 0a.5.5 0 0 0-.34.5v7a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.09 0 .5.5 0 0 0-.06 0zm1.16 1c.28 0 .5.22.5.5s-.22.5-.5.5-.5-.22-.5-.5.22-.5.5-.5zm2 0h3c.28 0 .5.22.5.5s-.22.5-.5.5h-3c-.28 0-.5-.22-.5-.5s.22-.5.5-.5zm-2.5 2h6v4h-6v-4z"}]]])
 
 (defn brush [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M7.44.03c-.03 0-.04.02-.06.03l-3.75 2.66c-.04.03-.1.11-.13.16l-.13.25c.72.23 1.27.78 1.5 1.5l.25-.13c.05-.03.12-.08.16-.13l2.66-3.75c.03-.05.04-.09 0-.13l-.44-.44c-.02-.02-.04-.03-.06-.03zm-4.78 3.97c-.74 0-1.31.61-1.31 1.34 0 .99-.55 1.85-1.34 2.31.39.22.86.34 1.34.34 1.47 0 2.66-1.18 2.66-2.66 0-.74-.61-1.34-1.34-1.34z"}]]])
 
 (defn bug [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M3.5 0c-1.19 0-1.98 1.69-1.19 2.5-.09.07-.2.14-.28.22l-1.31-.66a.5.5 0 0 0-.34-.06.5.5 0 0 0-.09.94l1.16.56c-.09.16-.19.33-.25.5h-.69a.5.5 0 0 0-.09 0 .5.5 0 1 0 .09 1h.5c0 .23.02.45.06.66l-.78.41a.5.5 0 1 0 .44.88l.66-.34c.25.46.62.85 1.03 1.09.35-.19.59-.44.59-.72v-1.44a.5.5 0 0 0 0-.09v-.81a.5.5 0 0 0 0-.22c.05-.23.26-.41.5-.41.28 0 .5.22.5.5v.88a.5.5 0 0 0 0 .09v.06a.5.5 0 0 0 0 .09v1.34c0 .27.24.53.59.72.41-.25.79-.63 1.03-1.09l.66.34a.5.5 0 1 0 .44-.88l-.78-.41c.04-.21.06-.43.06-.66h.5a.5.5 0 1 0 0-1h-.69c-.06-.17-.16-.34-.25-.5l1.16-.56a.5.5 0 0 0-.31-.94.5.5 0 0 0-.13.06l-1.31.66c-.09-.08-.19-.15-.28-.22.78-.83 0-2.5-1.19-2.5z"}]]])
 
 (defn bullhorn [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M6 0v6c.03.01.07 0 .09 0h.81c.05 0 .09-.04.09-.09v-5.81c0-.06-.04-.09-.09-.09h-.91zm-1 .5l-2.91 1.47c-.05.02-.13.03-.19.03h-1.81c-.06 0-.09.04-.09.09v1.81c0 .06.04.09.09.09h.91l1.03 2.72c.11.25.44.36.69.25.25-.11.36-.44.25-.69l-.75-1.78c.03-.14.13-.22.28-.22v-.03l2.5 1.25v-5z"}]]])
 
 (defn calculator [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M.09 0c-.06 0-.09.04-.09.09v7.81c0 .05.04.09.09.09h6.81c.05 0 .09-.04.09-.09v-7.81c0-.06-.04-.09-.09-.09h-6.81zm.91 1h5v2h-5v-2zm0 3h1v1h-1v-1zm2 0h1v1h-1v-1zm2 0h1v3h-1v-3zm-4 2h1v1h-1v-1zm2 0h1v1h-1v-1z"}]]])
 
 (defn calendar [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M0 0v2h7v-2h-7zm0 3v4.91c0 .05.04.09.09.09h6.81c.05 0 .09-.04.09-.09v-4.91h-7zm1 1h1v1h-1v-1zm2 0h1v1h-1v-1zm2 0h1v1h-1v-1zm-4 2h1v1h-1v-1zm2 0h1v1h-1v-1z"}]]])
 
 (defn camera-slr [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4.09 0c-.05 0-.1.04-.13.09l-.94 1.81c-.02.05-.07.09-.13.09h-1.41c-.83 0-1.5.67-1.5 1.5v4.41c0 .05.04.09.09.09h7.81c.05 0 .09-.04.09-.09v-5.81c0-.06-.04-.09-.09-.09h-.81c-.05 0-.1-.04-.13-.09l-.94-1.81c-.03-.05-.07-.09-.13-.09h-1.81zm-2.59 3c.28 0 .5.22.5.5s-.22.5-.5.5-.5-.22-.5-.5.22-.5.5-.5zm3.5 0c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 1c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"}]]])
 
 (defn caret-bottom [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M0 0l4 4 4-4h-8z" :transform "translate(0 2)"}]]])
 
 (defn caret-left [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4 0l-4 4 4 4v-8z" :transform "translate(2)"}]]])
 
 (defn caret-right [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M0 0v8l4-4-4-4z" :transform "translate(2)"}]]])
 
 (defn caret-top [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4 0l-4 4h8l-4-4z" :transform "translate(0 2)"}]]])
 
 (defn cart [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M.34 0a.5.5 0 0 0 .16 1h1.5l.09.25.41 1.25.41 1.25c.04.13.21.25.34.25h3.5c.14 0 .3-.12.34-.25l.81-2.5c.04-.13-.02-.25-.16-.25h-4.44l-.38-.72a.5.5 0 0 0-.44-.28h-2a.5.5 0 0 0-.09 0 .5.5 0 0 0-.06 0zm3.16 5c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5zm3 0c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5z"
             :transform "translate(0 1)"}]]])
 
 (defn chat [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M0 0v5l1-1h1v-3h3v-1h-5zm3 2v4h4l1 1v-5h-5z"}]]])
 
 (defn check [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M6.41 0l-.69.72-2.78 2.78-.81-.78-.72-.72-1.41 1.41.72.72 1.5 1.5.69.72.72-.72 3.5-3.5.72-.72-1.44-1.41z" :transform "translate(0 1)"}]]])
 
 (defn chevron-bottom [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M1.5 0l-1.5 1.5 4 4 4-4-1.5-1.5-2.5 2.5-2.5-2.5z" :transform "translate(0 1)"}]]])
 
 (defn chevron-left [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z" :transform "translate(1)"}]]])
 
 (defn chevron-right [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z" :transform "translate(1)"}]]])
 
 (defn chevron-top [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4 0l-4 4 1.5 1.5 2.5-2.5 2.5 2.5 1.5-1.5-4-4z" :transform "translate(0 1)"}]]])
 
 (defn circle-check [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4 0c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm2 1.78l.72.72-3.22 3.22-1.72-1.72.72-.72 1 1 2.5-2.5z"}]]])
 
 (defn circle-x [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4 0c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm-1.5 1.78l1.5 1.5 1.5-1.5.72.72-1.5 1.5 1.5 1.5-.72.72-1.5-1.5-1.5 1.5-.72-.72 1.5-1.5-1.5-1.5.72-.72z"}]]])
 
 (defn clipboard [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M3.5 0c-.28 0-.5.22-.5.5v.5h-.75c-.14 0-.25.11-.25.25v.75h3v-.75c0-.14-.11-.25-.25-.25h-.75v-.5c0-.28-.22-.5-.5-.5zm-3.25 1c-.14 0-.25.11-.25.25v6.5c0 .14.11.25.25.25h6.5c.14 0 .25-.11.25-.25v-6.5c0-.14-.11-.25-.25-.25h-.75v2h-5v-2h-.75z"}]]])
 
 (defn clock [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4 0c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm0 1c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm-.5 1v2.22l.16.13.5.5.34.38.72-.72-.38-.34-.34-.34v-1.81h-1z"}]]])
 
 (defn cloud-download [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4.5 0c-1.21 0-2.27.86-2.5 2-1.1 0-2 .9-2 2 0 .37.11.71.28 1h2.72v-.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v.5h1.91c.06-.16.09-.32.09-.5 0-.65-.42-1.29-1-1.5v-.5c0-1.38-1.12-2.5-2.5-2.5zm-.16 4a.5.5 0 0 0-.34.5v1.5h-1.5l2 2 2-2h-1.5v-1.5a.5.5 0 0 0-.59-.5.5.5 0 0 0-.06 0z"}]]])
 
 (defn cloud [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4.5 0c-1.21 0-2.27.86-2.5 2-1.1 0-2 .9-2 2s.9 2 2 2h4.5c.83 0 1.5-.67 1.5-1.5 0-.65-.42-1.29-1-1.5v-.5c0-1.38-1.12-2.5-2.5-2.5z" :transform "translate(0 1)"}]]])
 
 (defn cloud-upload[style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4.5 0c-1.21 0-2.27.86-2.5 2-1.1 0-2 .9-2 2 0 .37.11.71.28 1h2.22l2-2 2 2h1.41c.06-.16.09-.32.09-.5 0-.65-.42-1.29-1-1.5v-.5c0-1.38-1.12-2.5-2.5-2.5zm0 4.5l-2.5 2.5h2v.5a.5.5 0 1 0 1 0v-.5h2l-2.5-2.5z"}]]])
 
 (defn cloudy [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M2.5 0c-1.38 0-2.5 1.12-2.5 2.5 0 .39.09.74.25 1.06.3-.21.64-.37 1-.47.55-1.25 1.82-2.09 3.25-2.09-.46-.6-1.18-1-2-1zm2 2c-1.21 0-2.27.86-2.5 2-1.1 0-2 .9-2 2s.9 2 2 2h4.5c.83 0 1.5-.67 1.5-1.5 0-.65-.42-1.29-1-1.5v-.5c0-1.38-1.12-2.5-2.5-2.5z"}]]])
 
 (defn code [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M5 0l-3 6h1l3-6h-1zm-4 1l-1 2 1 2h1l-1-2 1-2h-1zm5 0l1 2-1 2h1l1-2-1-2h-1z" :transform "translate(0 1)"}]]])
 
 (defn cog [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M3.5 0l-.5 1.19c-.1.03-.19.08-.28.13l-1.19-.5-.72.72.5 1.19c-.05.1-.09.18-.13.28l-1.19.5v1l1.19.5c.04.1.08.18.13.28l-.5 1.19.72.72 1.19-.5c.09.04.18.09.28.13l.5 1.19h1l.5-1.19c.09-.04.19-.08.28-.13l1.19.5.72-.72-.5-1.19c.04-.09.09-.19.13-.28l1.19-.5v-1l-1.19-.5c-.03-.09-.08-.19-.13-.28l.5-1.19-.72-.72-1.19.5c-.09-.04-.19-.09-.28-.13l-.5-1.19h-1zm.5 2.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5z"}]]])
 (defn collapse-down [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M0 0v2h8v-2h-8zm2 3l2 2 2-2h-4zm-2 4v1h8v-1h-8z"}]]])
 
 (defn collapse-left [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M0 0v8h1v-8h-1zm6 0v8h2v-8h-2zm-1 2l-2 2 2 2v-4z"}]]])
 
 (defn collapse-right [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M0 0v8h2v-8h-2zm7 0v8h1v-8h-1zm-4 2v4l2-2-2-2z"}]]])
 
 (defn collapse-up [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M0 0v1h8v-1h-8zm4 3l-2 2h4l-2-2zm-4 3v2h8v-2h-8z"}]]])
 
 (defn command [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M1.5 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5h.5v1h-.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5v-.5h1v.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5h-.5v-1h.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5v.5h-1v-.5c0-.83-.67-1.5-1.5-1.5zm0 1c.28 0 .5.22.5.5v.5h-.5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5zm4 0c.28 0 .5.22.5.5s-.22.5-.5.5h-.5v-.5c0-.28.22-.5.5-.5zm-2.5 2h1v1h-1v-1zm-1.5 2h.5v.5c0 .28-.22.5-.5.5s-.5-.22-.5-.5.22-.5.5-.5zm3.5 0h.5c.28 0 .5.22.5.5s-.22.5-.5.5-.5-.22-.5-.5v-.5z"}]]])
 
 (defn comment-square [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M.09 0c-.06 0-.09.04-.09.09v5.81c0 .05.04.09.09.09h5.91l2 2v-7.91c0-.06-.04-.09-.09-.09h-7.81z"}]]])
 
 (defn compass [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4 0c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm0 1c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm2 1l-3 1-1 3 3-1 1-3zm-2 1.5c.28 0 .5.22.5.5s-.22.5-.5.5-.5-.22-.5-.5.22-.5.5-.5z"}]]])
 
 (defn contrast [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4 0c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm0 1c1.66 0 3 1.34 3 3s-1.34 3-3 3v-6z"}]]])
 
 (defn copywriting [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M0 0v1h8v-1h-8zm0 2v1h5v-1h-5zm0 3v1h8v-1h-8zm0 2v1h6v-1h-6zm7.5 0c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5z"}]]])
 
 (defn credit-card [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M.25 0c-.14 0-.25.11-.25.25v.75h8v-.75c0-.14-.11-.25-.25-.25h-7.5zm-.25 2v3.75c0 .14.11.25.25.25h7.5c.14 0 .25-.11.25-.25v-3.75h-8zm1 2h1v1h-1v-1zm2 0h1v1h-1v-1z" :transform "translate(0 1)"}]]])
 
 (defn crop[style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M1 0v1h-1v1h1v5h5v1h1v-1h1v-1h-1v-4.5l1-1-.5-.5-1 1h-4.5v-1h-1zm1 2h3.5l-3.5 3.5v-3.5zm4 .5v3.5h-3.5l3.5-3.5z"}]]])
 
 (defn dashboard [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4 0c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm0 1c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 1c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5zm-1.66 1a.5.5 0 0 0-.19.84l.91.91c-.02.08-.06.16-.06.25 0 .55.45 1 1 1s1-.45 1-1-.45-1-1-1c-.09 0-.17.04-.25.06l-.91-.91a.5.5 0 0 0-.44-.16.5.5 0 0 0-.06 0zm3.16 0c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5z"}]]])
 
 (defn data-transfer-download [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M3 0v3h-2l3 3 3-3h-2v-3h-2zm-3 7v1h8v-1h-8z"}]]])
 
 (defn data-transfer-upload [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M0 0v1h8v-1h-8zm4 2l-3 3h2v3h2v-3h2l-3-3z"}]]])
 
 (defn delete [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M2 0l-2 3 2 3h6v-6h-6zm1.5.78l1.5 1.5 1.5-1.5.72.72-1.5 1.5 1.5 1.5-.72.72-1.5-1.5-1.5 1.5-.72-.72 1.5-1.5-1.5-1.5.72-.72z" :transform "translate(0 1)"}]]])
 
 (defn dial [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M4 0c-2.2 0-4 1.8-4 4h1c0-1.66 1.34-3 3-3s3 1.34 3 3h1c0-2.2-1.8-4-4-4zm-.59 2.09c-.81.25-1.41 1.01-1.41 1.91 0 1.11.9 2 2 2 1.11 0 2-.89 2-2 0-.9-.59-1.65-1.41-1.91l-.59.88-.59-.88z" :transform "translate(0 1)"}]]])
 
 (defn document [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M0 0v8h7v-4h-4v-4h-3zm4 0v3h3l-3-3zm-3 2h1v1h-1v-1zm0 2h1v1h-1v-1zm0 2h4v1h-4v-1z"}]]]) 
 
 (defn dollar [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M2 0v1h-.75c-.68 0-1.25.57-1.25 1.25v.5c0 .68.44 1.24 1.09 1.41l2.56.66c.14.04.34.29.34.44v.5c0 .14-.11.25-.25.25h-2.5c-.12 0-.21-.04-.25-.06v-.94h-1v1c0 .34.2.63.44.78.23.16.52.22.81.22h.75v1h1v-1h.75c.69 0 1.25-.56 1.25-1.25v-.5c0-.68-.44-1.24-1.09-1.41l-2.56-.66c-.14-.04-.34-.29-.34-.44v-.5c0-.14.11-.25.25-.25h2.5c.11 0 .21.04.25.06v.94h1v-1c0-.34-.2-.63-.44-.78-.23-.16-.52-.22-.81-.22h-.75v-1h-1z"
             :transform "translate(1)"}]]])
 
 (defn double-quote-sans-left [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M0 0v6l3-3v-3h-3zm5 0v6l3-3v-3h-3z" :transform "translate(0 1)"}]]])
 
 
 (defn double-quote-sans-right [style color size]
   [:div style
-   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M3 0l-3 3v3h3v-6zm5 0l-3 3v3h3v-6z" :transform "translate(0 1)"}]]])
 
 (defn double-quote-serif-left [style color size]
   [:div style
-   [:svg {:xmlns "http:://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8"}
+   [:svg {:xmlns "http:://www.w3.org/2000/svg" :width size :height size :viewBox "0 0 8 8" :fill color}
     [:path {:d "M3 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1zm5 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1z" :transform "translate(0 1)"}]]])
 
 (defn double-quote-serif-right [style color size]
