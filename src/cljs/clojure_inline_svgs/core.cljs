@@ -2,6 +2,7 @@
   (:require
    [reagent.core :as reagent]
    [clojure-inline-svgs.open-iconic :as open-iconic]
+   [clojure-inline-svgs.strong-anchor-simple :as strong-anchor-simple]
    ))
 
 (defonce app-state
@@ -291,6 +292,7 @@ To use:
                  [open-iconic/resize-width "resize-width"]
                  [open-iconic/rss-alt "rss-alt"]
                  [open-iconic/rss "rss"]
+                 [strong-anchor-simple/scale "scale"]
                  [open-iconic/script "script"]
                  [open-iconic/share-boxed "share-boxed"]
                  [open-iconic/share "share"]
