@@ -105,11 +105,14 @@
         set-cursor   (reagent/cursor ratom [:icon-sets])]
     (fn []
       [:div {:style {:font-family "sans-serif"}}
-       [:h1
-        "Inline ClojureScript/Reagent/Hiccup SVGs"]
-       [:p "Licensed under the "
-        [:a {:href "http://opensource.org/licenses/MIT"} "MIT License"]
-        " (the same license as open-iconic)."]
+       [:h1 [:a {:href "https://github.com/deckeraa/clojure-inline-svg"} "clojure-inline-svg"]]
+       [:p "A curated set of inline svgs for your ClojureScript/Reagent app, licensed under the "
+        [:a {:href "http://opensource.org/licenses/MIT"} "MIT License"] "."]
+       [:p "Why generate svgs inline in code instead of just including an svg file?"]
+       [:ul
+        [:li "Convenience: just add the dependency and you're ready to go. No copying & pasting files."]
+        [:li "Size: use ClojureScript's dead-code optimizations to only ship the svg data that your app actually uses."]
+        [:li "Flexibliity: having hiccup for the svgs in code gives you full control over color, animations, etc."]]
        [:div {:style {:display :flex
                       :align-items :center}}
         [:pre
