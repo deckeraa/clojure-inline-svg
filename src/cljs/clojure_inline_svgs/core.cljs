@@ -123,7 +123,8 @@
 To use:
       (ns your-cool-project.core
         (:require
-         [clojure-inline-svgs.open-iconic :as open-iconic]))
+         [clojure-inline-svgs.open-iconic :as open-iconic]
+         [clojure-inline-svgs.strong-anchor-simple :as strong-anchor-simple]))
 
       (defn your-reagent-component []
         [:div
