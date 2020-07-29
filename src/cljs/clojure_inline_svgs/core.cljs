@@ -248,6 +248,7 @@ To use:
                              [open-iconic/eye "eye" "open-iconic"]
                              [open-iconic/file "file" "open-iconic"]
                              [open-iconic/fire "fire" "open-iconic"]
+                             [strong-anchor-simple/fire-extinguisher "fire-extinguisher" "strong-anchor-simple"]
                              [open-iconic/flag "flag" "open-iconic"]
                              [open-iconic/flash "flash" "open-iconic"]
                              [open-iconic/folder "folder" "open-iconic"]
