@@ -11,16 +11,23 @@
                  :icon-sets #{"open-iconic" "strong-anchor-simple"}}))
 
 (defn icon-card [color-cursor size-cursor icon-fn display-name icon-set]
-  (let [hovered? (reagent/atom false)]
+  (let [hovered? (reagent/atom false)
+        copy-animation? (reagent/atom false)]
     (fn []
       [:div {:style {:display :flex
                      :align-items :center
                      :text-align :center
                      :flex-direction :column
                      :padding "20px 10px"
-                     :min-width "150px"}
+                     :min-width "150px"
+                     :position :relative}
              :on-mouse-over #(reset! hovered? true)
              :on-mouse-out  #(reset! hovered? false)
+             :on-click (fn [e]
+                         (.writeText js/navigator.clipboard (str icon-set "/" display-name))
+                         (reset! copy-animation? true)
+                         (js/setTimeout #(reset! copy-animation? false) 2000) ;; 2000 matches the 2s specified for the animation in animations.css
+                         )
              }
        [icon-fn {} @color-cursor (str @size-cursor "px")]
        [:p {:style (merge
@@ -28,7 +35,11 @@
                     (if @hovered?
                       {:color "#000000ff"}
                       {:color "#00000000"}))} icon-set "/"]
-       [:p {:style {:margin-top "0px"}} display-name]])))
+       [:p {:style {:margin-top "0px"}} display-name]
+       (when @copy-animation? [:div {:style {:position :absolute
+                                             :top "60px"}
+                                     :class "copy-fade-out"}
+                               "Copied to clipboard"])])))
 
 (defn is-valid-hex-string? [s]
   (or (re-matches #"[a-fA-F0-9]{6}" s)

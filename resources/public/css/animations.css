@@ -1,0 +1,18 @@
+.copy-fade-out {
+  animation: copy-fade-out-anim 2s 1;
+}
+
+@keyframes copy-fade-out-anim {
+  0% {
+      top: 60px;
+      opacity: 100%;
+  }
+  80% {
+      top: 0px;
+      opacity: 60%;
+  }
+  100% {
+      top: 0px;
+      opacity: 0%;
+  }
+}

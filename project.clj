@@ -43,6 +43,7 @@
                     :optimizations   :advanced
                     :output-to       "resources/public/js/app.js"
                     :output-dir      "resources/public/js/min"
+                    :asset-path           "js/dev"
                     :elide-asserts   true
                     :closure-defines {goog.DEBUG false}
                     :pretty-print    false}}
