@@ -40,7 +40,7 @@
     {:id           "min"
      :source-paths ["src/cljs"]
      :compiler     {:main            clojure-inline-svgs.core
-                    :optimizations   :advanced
+                    :optimizations   :simple
                     :output-to       "resources/public/js/app.js"
                     :output-dir      "resources/public/js/min"
                     :asset-path           "js/dev"
