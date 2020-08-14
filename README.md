@@ -1,6 +1,6 @@
 # clojure-inline-svgs
 
-Live demo: [https://stronganchortech.com/inline-svg-icons-for-clojurescript/](https://stronganchortech.com/inline-svg-icons-for-clojurescript/)
+Live demo to browse the icons: [https://stronganchortech.com/inline-svg-icons-for-clojurescript/](https://stronganchortech.com/inline-svg-icons-for-clojurescript/)
 
 A curated set of inline svgs for your ClojureScript/Reagent app, licensed under the [MIT License](http://opensource.org/licenses/MIT).
 
