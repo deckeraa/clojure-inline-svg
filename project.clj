@@ -1,4 +1,4 @@
-(defproject com.stronganchortech/clojure-inline-svgs "1.0.0"
+(defproject com.stronganchortech/clojure-inline-svgs "2.0.0"
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.946"]
                  [javax.xml.bind/jaxb-api "2.2.11"] ;; this is to workaround a Java issue on my machine
@@ -9,7 +9,7 @@
 
   :min-lein-version "2.5.3"
 
-  :source-paths ["src/clj"]
+  :source-paths ["src"]
 
   :plugins [[lein-cljsbuild "1.1.4"]]
 
@@ -28,9 +28,9 @@
   :cljsbuild
   {:builds
    [{:id           "dev"
-     :source-paths ["src/cljs"]
-     :figwheel     {:on-jsload "clojure-inline-svgs.core/reload"}
-     :compiler     {:main                 clojure-inline-svgs.core
+     :source-paths ["src/com/stronganchortech"]
+     :figwheel     {:on-jsload "com.stronganchortech.clojure-inline-svgs/reload"}
+     :compiler     {:main                 com.stronganchortech.clojure-inline-svgs
                     :optimizations        :none
                     :output-to            "resources/public/js/app.js"
                     :output-dir           "resources/public/js/dev"
@@ -38,8 +38,8 @@
                     :source-map-timestamp true}}
 
     {:id           "min"
-     :source-paths ["src/cljs"]
-     :compiler     {:main            clojure-inline-svgs.core
+     :source-paths ["src/com/stronganchortech"]
+     :compiler     {:main            com.stronganchortech.clojure-inline-svgs
                     :optimizations   :simple
                     :output-to       "resources/public/js/app.js"
                     :output-dir      "resources/public/js/min"

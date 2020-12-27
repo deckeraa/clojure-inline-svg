@@ -1,4 +1,4 @@
-(ns clojure-inline-svgs.open-iconic)
+(ns com.stronganchortech.clojure-inline-svgs.open-iconic)
 
 (defn account-login [style color size]
   [:div style

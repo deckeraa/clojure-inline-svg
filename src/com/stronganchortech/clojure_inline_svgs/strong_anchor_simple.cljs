@@ -1,4 +1,4 @@
-(ns clojure-inline-svgs.strong-anchor-simple)
+(ns com.stronganchortech.clojure-inline-svgs.strong-anchor-simple)
 
 (defn bathroom-scale [style color size]
   [:div style

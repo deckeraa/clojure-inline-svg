@@ -1,8 +1,8 @@
-(ns clojure-inline-svgs.core
+(ns com.stronganchortech.clojure-inline-svgs
   (:require
    [reagent.core :as reagent]
-   [clojure-inline-svgs.open-iconic :as open-iconic]
-   [clojure-inline-svgs.strong-anchor-simple :as strong-anchor-simple]
+   [com.stronganchortech.clojure-inline-svgs.open-iconic :as open-iconic]
+   [com.stronganchortech.clojure-inline-svgs.strong-anchor-simple :as strong-anchor-simple]
    ))
 
 (defonce app-state
@@ -129,13 +129,13 @@
         [:pre
          [:code
           "In your project.clj's dependencies:\n
-      [com.stronganchortech/clojure-inline-svgs \"1.0.0\"]
+      [com.stronganchortech/clojure-inline-svgs \"2.0.0\"]
      
 To use:
       (ns your-cool-project.core
         (:require
-         [clojure-inline-svgs.open-iconic :as open-iconic]
-         [clojure-inline-svgs.strong-anchor-simple :as strong-anchor-simple]))
+         [com.stronganchortech.clojure-inline-svgs.open-iconic :as open-iconic]
+         [com.stronganchortech.clojure-inline-svgs.strong-anchor-simple :as strong-anchor-simple]))
 
       (defn your-reagent-component []
         [:div
