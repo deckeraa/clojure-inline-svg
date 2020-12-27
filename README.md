@@ -12,14 +12,14 @@ Why generate svgs inline in code instead of just including an svg file?
 
 In your project.clj's dependencies:
 ```
-      [com.stronganchortech/clojure-inline-svgs "1.0.0"]
+      [com.stronganchortech/clojure-inline-svgs "2.0.0"]
 ```     
 To use:
 ```
       (ns your-cool-project.core
         (:require
-         [clojure-inline-svgs.open-iconic :as open-iconic]
-         [clojure-inline-svgs.strong-anchor-simple :as strong-anchor-simple]))
+         [com.stronganchortech.clojure-inline-svgs.open-iconic :as open-iconic]
+         [com.stronganchortech.clojure-inline-svgs.strong-anchor-simple :as strong-anchor-simple]))
 
       (defn your-reagent-component []
         [:div
